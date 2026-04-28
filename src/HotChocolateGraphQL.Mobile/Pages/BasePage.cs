@@ -8,7 +8,7 @@ abstract partial  class BasePage<TViewModel> : BasePage where TViewModel : BaseV
 {
 	protected BasePage(in TViewModel viewModel, in string? title = null, in bool shouldUseSafeArea = true) : base(viewModel, title)
 	{
-		On<iOS>().SetUseSafeArea(shouldUseSafeArea);
+		SafeAreaEdges = shouldUseSafeArea ? Microsoft.Maui.SafeAreaEdges.All : Microsoft.Maui.SafeAreaEdges.None;
 		On<iOS>().SetModalPresentationStyle(UIModalPresentationStyle.FormSheet);
 	}
 
