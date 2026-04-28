@@ -9,3 +9,16 @@ updates:
     directory: "src/"
     schedule:
       interval: "daily"
+  - package-ecosystem: "dotnet-sdk"
+    directory: "src/"
+    schedule:
+      interval: "weekly"
+    ignore:
+      - dependency-name: "*"
+        update-types: 
+          - "version-update:semver-patch"
+          - "version-update:semver-minor"
+  - package-ecosystem: "github-actions"
+    directory: "src/"
+    schedule:
+      interval: "weekly"
