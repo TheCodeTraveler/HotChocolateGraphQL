@@ -54,7 +54,7 @@
     <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="10.0.70" />
     <PackageReference Include="CommunityToolkit.Maui" Version="14.2.0" />
     <PackageReference Include="CommunityToolkit.Maui.Markup" Version="7.0.1" />
-    <PackageReference Include="StrawberryShake.Maui" Version="16.1.2" />
+    <PackageReference Include="StrawberryShake.Maui" Version="16.1.3" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="10.6.0" />
   </ItemGroup>
